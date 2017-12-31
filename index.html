@@ -7,6 +7,8 @@
   <title>Flexbox Grid App Theme Layout</title>
   <link rel="stylesheet" href="css/flexboxgrid.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  
 </head>
 <body>
  <!-- HEADER -->
@@ -43,7 +45,7 @@
       <!-- This will be one big column and will span the width of the div -->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1>Welcome to <span class="primary-text">My Golf Pro</span></h1>
-          <p>A place track golf scores, document harrowing holes, and and all the courses that you've played!</p>
+          <p>A mobile-friendly app to track golf scores, document harrowing holes, and all the courses you  play!</p>
         </div>
       </div> <!-- end row -->
     </div> <!-- end container -->
@@ -63,17 +65,19 @@
             <!-- There will be 3 cols on sm, md, and lg screens. -->  
             <!-- On xs screens, this will be one big column --> 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <i class="fa fa-search" aria-hidden="true"></i> <br>
-              <h4>Golf Course Information</h4>
+              <i class="fa fa-database fa-lg"></i> <br>
+              <h4> US Golf Course Database</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             </div>
             
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <i class="fa fa-info fa-lg"></i> <br>
               <h4>Hole by Hole Description</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             </div>
             
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <i class="fa fa-calculator fa-lg"></i> <br>
               <h4>Score Keeper</h4>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -82,16 +86,19 @@
           <!-- ICON ROW 2 -->
           <div class="row center-xs center-sm center-md center-lg">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <h4>Pro Tips for Infamous Holes</h4>
+              <i class="fa fa-sticky-note fa-lg"></i> <br>
+              <h4>Golf Journal</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <i class="fa fa-mobile fa-2x" aria-hidden="true"></i> <br>
+              <h4>Mobile Friendly App</h4>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
               
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <h4>Golf Journal</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-              
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <i class="fa fa-rocket fa-lg"></i> <br>
               <h4>Free Upgrades</h4>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
@@ -100,5 +107,69 @@
       </div>
     </div> <!-- end container -->
   </section> <!-- end features section -->
+
+  <!-- INFO SECTION -->
+  <section id="info">
+    <div class="container">
+      <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <img src="images/iphone.png" alt="iphone">
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <h2>Core Features</h2>
+          <ul>
+            <li><i class="fa fa-check"></i> US Golf Course Database </li>
+            <li><i class="fa fa-check"></i> Hole By Hole Description</li>
+            <li><i class="fa fa-check"></i> Score Keeper</li>
+            <li><i class="fa fa-check"></i> Golf Journal</li>
+            <li><i class="fa fa-check"></i> Mobile Friendly App</li>
+            <li><i class="fa fa-check"></i> Free Upgrades</li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- end container -->
+  </section> <!-- end features section -->
+
+  <!-- COMPANY INFO  -->
+  <section id="company">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fa fa-phone"> (651) 333-1357</i></li>
+            <li><i class="fa fa-envelope"> mygolfpro@fore.com</i></li>
+            <li><i class="fa fa-map-marker"> 405 South 5th Street Minneapolis, Mn 54321</i></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h4>About Fore!</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, at! Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h4> Fore! Newsletter</h4>
+          <p>Sign up for the Fore! monthly newsletter!</p>
+          <form> 
+            <input type="email" placeholder="email">
+            <button type="submit" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Copyright &copy; 2017 | My Golf Pro by Fore!</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
