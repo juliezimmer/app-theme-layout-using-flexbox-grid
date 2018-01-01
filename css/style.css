@@ -28,6 +28,7 @@ img  {
 #main-header {
   border-bottom: 1px solid #56a79a;
   line-height: 1.75em;
+  background:#474947;
 }
 
 /*********** NAV BAR ***********/
@@ -45,7 +46,8 @@ img  {
 /* styles the individual a tags, the links */
 #navbar a {
   text-decoration: none;
-  color: rgb(97, 85, 85);
+  /* color: rgb(97, 85, 85); */
+  color: white;
 }
 
 /* hover state and current state */
@@ -55,4 +57,180 @@ img  {
   padding-bottom: 3px; /* this puts a little distance between the link and the line under it when active */
 }
 
+/*********** SHOWCASE **********/
+#showcase {
+  background:url('../images/showcase.jpeg') no-repeat center center;
+  border-bottom: 1px solid #56a79a;
+  margin-bottom: 30px;
+}
 
+#showcase .row {
+  height: 600px;
+  width:auto;
+}
+
+#showcase h1{
+  font-size: 40px;
+  margin:0;
+  padding: 20px;
+}
+
+#showcase p {
+  color: #ccc;  
+  margin: 0;
+}
+
+/* this styles the oblong circle in the iddle of the showcase */
+#showcase .showcase-content {
+  background: #474947;
+  color: white;
+  border-radius:90px;
+  padding: 30px;
+  opacity: 0.85;
+}
+
+/* ********** FEATURES ********** */
+#features h2 {
+  font-size: 35px;
+  margin:0;
+  padding-bottom: 10px;
+}
+
+#features p {
+  color: #888;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#features .fa {
+  font-size: 60px;
+  color: #56a79a;
+}
+
+/* ********** INFO **********  */
+#info {
+  background: url('../images/info-bg.jpg') no-repeat; 
+  color: #fff;
+}
+
+#info h2 {
+  font-size: 35px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#info li {
+  line-height: 2em;
+  font-size: 20px;
+}
+
+/* ********* COMPANY ********** */
+#company {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#company h4 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#company ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2em; 
+}
+
+#company input[type="text"] {
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#company button {
+  background: #56a79a;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* ********** FOOTER **********  */
+#main-footer {
+  background: #56a79a; 
+  color: #fff;
+}
+
+/*  PAGE  */
+#page {
+  margin-bottom: 40px;
+}
+
+/* ********** SERVICES **********  */
+.services ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+/* this uses CSS3 to color even and odd li tags different colors */
+.services ul li:nth-child(odd) {
+  background: #333;
+  color: #fff;
+}
+
+.services ul li:nth-child(even) {
+  background: #56a79a;
+  color: #fff;
+}
+
+/* ********** CONTACT PAGE ********** */
+.contact form {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact form input[type="text"] {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.contact form textarea {
+  width: 50%;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.contact form button {
+  width: 50%;
+  padding: 10px 0;
+  background: #56a79a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact form label {
+  text-transform: uppercase;
+
+}
+
+/* ********** MEDIA QUERIES ********** */
+@media(max-width: 1000px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 500px) {
+  #showcase .showcase-content {
+    padding: 40px 10px;
+  }
+}
