@@ -1,3 +1,12 @@
+/* core body styles */
+body{
+  font-family:'Open-sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.5em; /* height inbetween each line */
+  margin: 0;
+  padding: 0;
+}
+
 img  {
   width: 100%; /* this sets the width of the image to 100% of its container  and the image is contained within the container. */
 }
@@ -5,3 +14,45 @@ img  {
 .container {
   margin: auto; 
 }
+
+/* Common Classes */
+.primary-text {
+  color: #56a79a;
+}
+
+.primary-background {
+  background:#56a79a;
+}
+
+/*********** HEADER ***********/
+#main-header {
+  border-bottom: 1px solid #56a79a;
+  line-height: 1.75em;
+}
+
+/*********** NAV BAR ***********/
+#navbar {
+  text-transform: uppercase;
+}
+
+/* styles the individual navbar list items */
+#navbar li {
+  display: inline; /* displays the nav links side by side, horizontally */
+  padding-right: 15px;
+  list-style: none; /* removes the default bullets on the ul list items. */
+}
+
+/* styles the individual a tags, the links */
+#navbar a {
+  text-decoration: none;
+  color: rgb(97, 85, 85);
+}
+
+/* hover state and current state */
+#navbar li.current a, #navbar a:hover {
+  color:#56a79a; 
+  border-bottom: 3px solid #56a79a;
+  padding-bottom: 3px; /* this puts a little distance between the link and the line under it when active */
+}
+
+
